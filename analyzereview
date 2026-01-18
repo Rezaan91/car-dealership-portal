@@ -1,0 +1,34 @@
+# cURL Command for Sentiment Analysis of Review Text
+# Command:
+curl -X POST http://localhost:8000/api/analyze/ \
+  -H "Content-Type: application/json" \
+  -d '{"text": "Fantastic services"}'
+
+# Expected Output:
+{
+  "text": "Fantastic services",
+  "sentiment": "positive"
+}
+
+# Status Code: 200 OK
+# Endpoint: /api/analyze/
+
+# Additional Examples:
+
+# Example 1: Positive Review
+curl -X POST http://localhost:8000/api/analyze/ \
+  -H "Content-Type: application/json" \
+  -d '{"text": "Excellent customer service and great deals!"}'
+# Output: {"text": "Excellent customer service and great deals!", "sentiment": "positive"}
+
+# Example 2: Negative Review
+curl -X POST http://localhost:8000/api/analyze/ \
+  -H "Content-Type: application/json" \
+  -d '{"text": "Terrible experience, very disappointing"}'
+# Output: {"text": "Terrible experience, very disappointing", "sentiment": "negative"}
+
+# Example 3: Neutral Review
+curl -X POST http://localhost:8000/api/analyze/ \
+  -H "Content-Type: application/json" \
+  -d '{"text": "The dealership is located downtown"}'
+# Output: {"text": "The dealership is located downtown", "sentiment": "neutral"}

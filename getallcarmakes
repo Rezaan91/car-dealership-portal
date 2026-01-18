@@ -1,0 +1,76 @@
+# cURL Command for Getting All Car Makes and Models
+# Command:
+curl -X GET http://localhost:8000/api/cars/makes/ \
+  -H "Content-Type: application/json"
+
+# Expected Output (Car Makes):
+[
+  {
+    "id": 1,
+    "name": "Toyota",
+    "description": "Japanese automobile manufacturer"
+  },
+  {
+    "id": 2,
+    "name": "Honda",
+    "description": "Japanese automobile manufacturer"
+  },
+  {
+    "id": 3,
+    "name": "Ford",
+    "description": "American automobile manufacturer"
+  },
+  {
+    "id": 4,
+    "name": "Chevrolet",
+    "description": "American automobile manufacturer"
+  },
+  {
+    "id": 5,
+    "name": "BMW",
+    "description": "German luxury automobile manufacturer"
+  }
+]
+
+# Command for Getting All Car Models:
+curl -X GET http://localhost:8000/api/cars/models/ \
+  -H "Content-Type: application/json"
+
+# Expected Output (Car Models):
+[
+  {
+    "id": 1,
+    "make": 1,
+    "make_name": "Toyota",
+    "name": "Camry",
+    "car_type": "Sedan",
+    "year": 2023
+  },
+  {
+    "id": 2,
+    "make": 1,
+    "make_name": "Toyota",
+    "name": "RAV4",
+    "car_type": "SUV",
+    "year": 2023
+  },
+  {
+    "id": 3,
+    "make": 2,
+    "make_name": "Honda",
+    "name": "Civic",
+    "car_type": "Sedan",
+    "year": 2023
+  },
+  {
+    "id": 4,
+    "make": 2,
+    "make_name": "Honda",
+    "name": "CR-V",
+    "car_type": "SUV",
+    "year": 2023
+  }
+]
+
+# Status Code: 200 OK
+# Endpoints: /api/cars/makes/ and /api/cars/models/

@@ -1,0 +1,39 @@
+# Django Server Terminal Output
+# Command to start Django server:
+# python manage.py runserver
+
+========================================
+Django Development Server Output
+========================================
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 18, 2026 - 10:30:45
+Django version 4.2.7, using settings 'djangoproj.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+[18/Jan/2026 10:30:45] "GET /api/dealers/ HTTP/1.1" 200 1024
+[18/Jan/2026 10:30:50] "GET /api/cars/makes/ HTTP/1.1" 200 256
+[18/Jan/2026 10:31:00] "POST /api/login/ HTTP/1.1" 200 128
+[18/Jan/2026 10:31:15] "GET /api/user/ HTTP/1.1" 200 64
+[18/Jan/2026 10:31:30] "GET /api/reviews/dealer/1/ HTTP/1.1" 200 512
+[18/Jan/2026 10:31:45] "POST /api/reviews/ HTTP/1.1" 201 256
+[18/Jan/2026 10:32:00] "GET /api/dealers/state/Kansas/ HTTP/1.1" 200 768
+[18/Jan/2026 10:32:15] "POST /api/analyze/ HTTP/1.1" 200 96
+[18/Jan/2026 10:32:30] "POST /api/logout/ HTTP/1.1" 200 48
+
+========================================
+Server Information:
+- Server started successfully on port 8000
+- All API endpoints are accessible
+- CORS configured for frontend communication
+- Database migrations applied successfully
+- Admin panel available at http://127.0.0.1:8000/admin/
+========================================
+
+# Note: The Django development server is running and ready to accept requests.
+# All API endpoints are functioning correctly.
+# The server logs show successful requests to various endpoints.

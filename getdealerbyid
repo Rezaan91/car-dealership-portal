@@ -1,0 +1,23 @@
+# cURL Command for Getting Dealer by ID
+# Command:
+curl -X GET http://localhost:8000/api/dealers/1/ \
+  -H "Content-Type: application/json"
+
+# Expected Output:
+{
+  "id": 1,
+  "name": "Best Motors Inc",
+  "address": "123 Main Street",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "zip_code": "02101",
+  "phone": "(617) 555-0100",
+  "email": "info@bestmotors.com",
+  "website": "https://www.bestmotors.com",
+  "short_desc": "Your trusted car dealer in Boston",
+  "full_desc": "Best Motors Inc has been serving the Boston area for over 20 years with quality vehicles and exceptional customer service. Our experienced team is dedicated to helping you find the perfect vehicle.",
+  "review_count": 5
+}
+
+# Status Code: 200 OK
+# Endpoint: /api/dealers/<dealer_id>/
