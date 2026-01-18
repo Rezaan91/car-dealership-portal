@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: car-dealership-portal
+    env: python
+    region: oregon
+    buildCommand: "./server/build.sh"
+    startCommand: "cd server && gunicorn djangoproj.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: DEBUG
+        value: False
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: car-dealership-db
+          property: connectionString
+
+databases:
+  - name: car-dealership-db
+    databaseName: car_dealership
+    user: car_dealership_user
