@@ -1,23 +1,44 @@
 services:
+  # Django Backend Service
   - type: web
     name: car-dealership-portal
     env: python
     region: oregon
-    buildCommand: "./server/build.sh"
-    startCommand: "cd server && gunicorn djangoproj.wsgi:application"
+    plan: free
+    buildCommand: "chmod +x server/build.sh && ./server/build.sh"
+    startCommand: "cd server && gunicorn djangoproj.wsgi:application --bind 0.0.0.0:$PORT --workers 4 --timeout 120"
+    healthCheckPath: /
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0
       - key: DEBUG
-        value: False
+        value: "False"
       - key: SECRET_KEY
         generateValue: true
+      - key: ALLOWED_HOSTS
+        sync: false
       - key: DATABASE_URL
         fromDatabase:
           name: car-dealership-db
           property: connectionString
+      - key: DJANGO_SETTINGS_MODULE
+        value: djangoproj.settings
+      - key: WEB_CONCURRENCY
+        value: "4"
+      # CORS Configuration
+      - key: CORS_ALLOWED_ORIGINS
+        value: "https://car-dealership-portal.onrender.com"
+      # Security Settings
+      - key: SECURE_SSL_REDIRECT
+        value: "True"
+      - key: SECURE_PROXY_SSL_HEADER
+        value: "HTTP_X_FORWARDED_PROTO,https"
 
 databases:
+  # PostgreSQL Database
   - name: car-dealership-db
     databaseName: car_dealership
     user: car_dealership_user
+    plan: free
+    region: oregon
+    ipAllowList: []

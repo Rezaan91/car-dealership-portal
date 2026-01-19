@@ -1,0 +1,57 @@
+# Files and directories to ignore during Render deployment
+
+# Development files
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local environment
+.env
+.env.local
+*.local
+
+# Development database
+db.sqlite3
+*.sqlite3
+
+# Node modules (if frontend is built separately)
+node_modules/
+npm-debug.log*
+
+# Build artifacts
+*.log
+logs/
+
+# Documentation (optional - remove if you want docs in production)
+docs/
+*.md
+!README.md
+
+# Git
+.git/
+.gitignore
