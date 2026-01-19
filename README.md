@@ -1,10 +1,10 @@
-# Car Dealership Portal - Full Stack Capstone Project
+# xrwvm-fullstack_developer_capstone
 
 ## Project Overview
 An enhanced car dealership portal application built with Django backend and React frontend. This application provides comprehensive features for managing car dealerships, including dealer information, car inventory, customer reviews, and sentiment analysis.
 
 ## Project Name
-**Enhanced Car Dealership Portal**
+**fullstack_developer_capstone**
 
 ## Features
 - User authentication (login, logout, registration)

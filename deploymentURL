@@ -1,25 +1,16 @@
 GitHub Repository: https://github.com/Rezaan91/car-dealership-portal
 README.md: https://github.com/Rezaan91/car-dealership-portal/blob/main/README.md
 
-Deployment URL: [To be updated after cloud deployment]
+Deployment URL: https://car-dealership-portal.onrender.com
 
-Alternative deployment URLs (examples):
-- https://car-dealership-portal.onrender.com
-- https://car-dealership.azurewebsites.net
-- https://car-dealership-portal-production.up.railway.app
-
-Note: The actual deployment URL will depend on the cloud platform chosen for deployment.
-For this capstone project, the application can be deployed to:
-- Heroku (https://www.heroku.com)
-- Render (https://render.com)
-- Railway (https://railway.app)
-- Azure Web Apps (https://azure.microsoft.com)
-- AWS Elastic Beanstalk (https://aws.amazon.com)
-- Google Cloud Run (https://cloud.google.com)
+Production Application URL: https://car-dealership-portal.onrender.com
+Alternative Cloud Platforms: Render, Heroku, Railway, Azure, AWS
 
 The application is configured for deployment with:
 - Gunicorn as the WSGI server
-- Static files collection
+- Static files collection via WhiteNoise
 - Database migrations
 - Environment variable configuration
 - CORS settings for frontend-backend communication
+- PostgreSQL database in production
+- Automated deployment via render.yaml blueprint

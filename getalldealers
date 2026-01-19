@@ -1,53 +1,58 @@
 # cURL Command for Getting All Dealers
 # Command:
-curl -X GET http://localhost:8000/api/dealers/ \
+curl -X GET http://localhost:8000/fetchDealers \
   -H "Content-Type: application/json"
 
-# Expected Output:
+# Expected Output (showing first 3 of 50 dealers):
 [
   {
-    "id": 1,
+    "_id": 1,
     "name": "Best Motors Inc",
     "address": "123 Main Street",
     "city": "Boston",
     "state": "Massachusetts",
-    "zip_code": "02101",
+    "zip": "02101",
+    "latitude": 42.3601,
+    "longitude": -71.0589,
     "phone": "(617) 555-0100",
     "email": "info@bestmotors.com",
     "website": "https://www.bestmotors.com",
     "short_desc": "Your trusted car dealer in Boston",
-    "full_desc": "Best Motors Inc has been serving the Boston area for over 20 years...",
-    "review_count": 5
+    "full_desc": "Best Motors Inc has been serving the Boston area for over 20 years..."
   },
   {
-    "id": 2,
+    "_id": 2,
     "name": "Elite Auto Sales",
     "address": "456 Oak Avenue",
     "city": "Kansas City",
     "state": "Kansas",
-    "zip_code": "66101",
+    "zip": "66101",
+    "latitude": 39.0997,
+    "longitude": -94.5786,
     "phone": "(913) 555-0200",
     "email": "sales@eliteauto.com",
     "website": "https://www.eliteauto.com",
     "short_desc": "Premium vehicles and exceptional service",
-    "full_desc": "Elite Auto Sales specializes in premium vehicles...",
-    "review_count": 3
+    "full_desc": "Elite Auto Sales specializes in premium vehicles..."
   },
   {
-    "id": 3,
+    "_id": 3,
     "name": "Quality Cars",
     "address": "789 Pine Road",
     "city": "Wichita",
     "state": "Kansas",
-    "zip_code": "67202",
+    "zip": "67202",
+    "latitude": 37.6872,
+    "longitude": -97.3301,
     "phone": "(316) 555-0300",
     "email": "contact@qualitycars.com",
     "website": "https://www.qualitycars.com",
     "short_desc": "Quality vehicles at affordable prices",
-    "full_desc": "At Quality Cars, we believe in providing...",
-    "review_count": 7
+    "full_desc": "At Quality Cars, we believe in providing..."
   }
+  ... (47 more dealers)
 ]
 
 # Status Code: 200 OK
-# Endpoint: /api/dealers/
+# Endpoint: /fetchDealers
+# Total dealers returned: 50

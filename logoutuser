@@ -1,12 +1,11 @@
 # cURL Command for Logout Operation
 # Command:
-curl -X POST http://localhost:8000/api/logout/ \
-  -H "Content-Type: application/json" \
+curl -X GET http://localhost:8000/djangoapp/logout \
   -b cookies.txt
 
 # Expected Output:
 {
-  "message": "Logout successful"
+  "userName": "testuser"
 }
 
 # Status Code: 200 OK

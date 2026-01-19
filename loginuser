@@ -2,19 +2,13 @@
 # Command:
 curl -X POST http://localhost:8000/api/login/ \
   -H "Content-Type: application/json" \
-  -d '{"username": "testuser", "password": "testpass123"}' \
+  -d '{"userName": "testuser", "password": "testpass123"}' \
   -c cookies.txt
 
 # Expected Output:
 {
-  "message": "Login successful",
-  "user": {
-    "id": 1,
-    "username": "testuser",
-    "email": "testuser@example.com",
-    "first_name": "Test",
-    "last_name": "User"
-  }
+  "userName": "testuser",
+  "status": "Authenticated User"
 }
 
 # Status Code: 200 OK
