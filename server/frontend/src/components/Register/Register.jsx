@@ -51,7 +51,7 @@ function Register() {
         <div className="col-md-6">
           <div className="card">
             <div className="card-body">
-              <h2 className="card-title text-center mb-4">Sign Up</h2>
+              <h2 className="card-title text-center mb-4">Sign-up</h2>
               
               {error && (
                 <div className="alert alert-danger" role="alert">
@@ -69,6 +69,7 @@ function Register() {
                     className="form-control"
                     id="username"
                     name="username"
+                    placeholder="Username"
                     value={formData.username}
                     onChange={handleChange}
                     required
@@ -84,6 +85,7 @@ function Register() {
                     className="form-control"
                     id="first_name"
                     name="first_name"
+                    placeholder="First Name"
                     value={formData.first_name}
                     onChange={handleChange}
                     required
@@ -99,6 +101,7 @@ function Register() {
                     className="form-control"
                     id="last_name"
                     name="last_name"
+                    placeholder="Last Name"
                     value={formData.last_name}
                     onChange={handleChange}
                     required
@@ -114,6 +117,7 @@ function Register() {
                     className="form-control"
                     id="email"
                     name="email"
+                    placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -129,6 +133,7 @@ function Register() {
                     className="form-control"
                     id="password"
                     name="password"
+                    placeholder="Password"
                     value={formData.password}
                     onChange={handleChange}
                     required
