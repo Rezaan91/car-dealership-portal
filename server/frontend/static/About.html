@@ -49,13 +49,9 @@
             height: 150px;
             border-radius: 50%;
             margin: 0 auto 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 48px;
-            font-weight: bold;
+            display: block;
+            object-fit: cover;
+            border: 4px solid #667eea;
         }
         
         .team-name {
@@ -73,6 +69,16 @@
         
         .team-email {
             color: #666;
+        }
+        
+        .team-description {
+            color: #555;
+            text-align: left;
+            line-height: 1.6;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
         }
         
         .page-title {
@@ -133,9 +139,17 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="team-card">
-                            <div class="team-image">JS</div>
+                            <img src="https://i.pravatar.cc/150?img=12" alt="John Smith" class="team-image">
                             <div class="team-name">John Smith</div>
                             <div class="team-role">Full Stack Developer</div>
+                            <p class="team-description">
+                                With over 8 years of experience in full-stack development, John specializes in building 
+                                scalable web applications using Django and React. He holds a Master's degree in Computer 
+                                Science from Stanford University and has worked with Fortune 500 companies to deliver 
+                                enterprise-level solutions. John is passionate about clean code architecture and believes 
+                                in creating user-centric applications that solve real-world problems. His approach combines 
+                                technical excellence with a deep understanding of business requirements.
+                            </p>
                             <div class="team-email">
                                 <a href="mailto:john.smith@cardealership.com">john.smith@cardealership.com</a>
                             </div>
@@ -143,9 +157,17 @@
                     </div>
                     <div class="col-md-4">
                         <div class="team-card">
-                            <div class="team-image">SJ</div>
+                            <img src="https://i.pravatar.cc/150?img=47" alt="Sarah Johnson" class="team-image">
                             <div class="team-name">Sarah Johnson</div>
                             <div class="team-role">Backend Developer</div>
+                            <p class="team-description">
+                                Sarah brings 6+ years of backend development expertise, specializing in Python, Django, 
+                                and advanced database design. She graduated with honors from MIT with a degree in Software 
+                                Engineering and has a proven track record of optimizing database performance and building 
+                                robust API architectures. Sarah is dedicated to writing secure, efficient code and has 
+                                contributed to several open-source projects. She believes that solid backend infrastructure 
+                                is the foundation of any successful application.
+                            </p>
                             <div class="team-email">
                                 <a href="mailto:sarah.johnson@cardealership.com">sarah.johnson@cardealership.com</a>
                             </div>
@@ -153,9 +175,17 @@
                     </div>
                     <div class="col-md-4">
                         <div class="team-card">
-                            <div class="team-image">MW</div>
+                            <img src="https://i.pravatar.cc/150?img=33" alt="Michael Williams" class="team-image">
                             <div class="team-name">Michael Williams</div>
                             <div class="team-role">Frontend Developer</div>
+                            <p class="team-description">
+                                Michael is a frontend specialist with 7 years of experience in React, modern CSS, and 
+                                UI/UX design. He earned his Bachelor's degree in Graphic Design and Computer Science from 
+                                Carnegie Mellon University. Michael excels at translating complex requirements into 
+                                intuitive, visually appealing interfaces. He stays current with the latest frontend 
+                                technologies and accessibility standards, ensuring that every user has an exceptional 
+                                experience. His design philosophy centers on simplicity, usability, and delightful interactions.
+                            </p>
                             <div class="team-email">
                                 <a href="mailto:michael.williams@cardealership.com">michael.williams@cardealership.com</a>
                             </div>
