@@ -49,13 +49,8 @@
             height: 150px;
             border-radius: 50%;
             margin: 0 auto 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 48px;
-            font-weight: bold;
+            object-fit: cover;
+            border: 4px solid #667eea;
         }
         
         .team-name {
@@ -69,6 +64,13 @@
             color: #667eea;
             font-weight: 600;
             margin-bottom: 15px;
+        }
+        
+        .team-description {
+            color: #555;
+            margin-bottom: 15px;
+            text-align: left;
+            padding: 0 15px;
         }
         
         .team-email {
@@ -133,9 +135,14 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="team-card">
-                            <div class="team-image">JS</div>
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith" class="team-image">
                             <div class="team-name">John Smith</div>
                             <div class="team-role">Full Stack Developer</div>
+                            <div class="team-description">
+                                John is a seasoned full-stack developer with over 8 years of experience in building scalable web applications. 
+                                He specializes in React, Node.js, and cloud architecture. John leads our technical infrastructure and ensures 
+                                the platform runs smoothly for thousands of users daily.
+                            </div>
                             <div class="team-email">
                                 <a href="mailto:john.smith@cardealership.com">john.smith@cardealership.com</a>
                             </div>
@@ -143,9 +150,14 @@
                     </div>
                     <div class="col-md-4">
                         <div class="team-card">
-                            <div class="team-image">SJ</div>
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="team-image">
                             <div class="team-name">Sarah Johnson</div>
                             <div class="team-role">Backend Developer</div>
+                            <div class="team-description">
+                                Sarah is our backend expert with a passion for database optimization and API design. With 6 years of experience 
+                                in Python and Django, she architected our dealer review system and manages all server-side operations. 
+                                Sarah ensures data integrity and security across our platform.
+                            </div>
                             <div class="team-email">
                                 <a href="mailto:sarah.johnson@cardealership.com">sarah.johnson@cardealership.com</a>
                             </div>
@@ -153,9 +165,14 @@
                     </div>
                     <div class="col-md-4">
                         <div class="team-card">
-                            <div class="team-image">MW</div>
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Michael Williams" class="team-image">
                             <div class="team-name">Michael Williams</div>
                             <div class="team-role">Frontend Developer</div>
+                            <div class="team-description">
+                                Michael brings 5 years of UI/UX design and frontend development expertise to our team. He crafted our 
+                                intuitive user interface using modern frameworks and responsive design principles. Michael is dedicated 
+                                to creating beautiful, accessible experiences that delight our users.
+                            </div>
                             <div class="team-email">
                                 <a href="mailto:michael.williams@cardealership.com">michael.williams@cardealership.com</a>
                             </div>
